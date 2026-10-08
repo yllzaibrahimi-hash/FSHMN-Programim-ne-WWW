@@ -12,7 +12,6 @@
 }
 
 
-/* Box model */
 
 * {
     box-sizing: border-box;
@@ -36,7 +35,6 @@ body {
 }
 
 
-/* Header */
 
 .site-header {
     padding: 8px var(--space-page) 26px;
@@ -59,7 +57,7 @@ body {
 }
 
 
-/* Main */
+
 
 .main-content {
     width: 100%;
@@ -81,7 +79,7 @@ body {
 }
 
 
-/* Etiketat */
+
 
 .tags {
     display: flex;
@@ -113,7 +111,7 @@ body {
 }
 
 
-/* Titulli */
+
 
 .debate-card h2 {
     margin: 0 0 20px;
@@ -123,7 +121,7 @@ body {
 }
 
 
-/* Detajet */
+
 
 .event-details {
     margin: 0 0 18px;
@@ -137,7 +135,7 @@ body {
 }
 
 
-/* Butoni / lidhja */
+
 
 .register-link {
     display: inline-block;
@@ -156,14 +154,13 @@ body {
 }
 
 
-/* Hover */
+
 
 .register-link:hover {
     background: #0d625d;
 }
 
 
-/* Focus */
 
 .register-link:focus-visible {
     outline: 3px solid #102d52;
@@ -171,7 +168,7 @@ body {
 }
 
 
-/* Footer */
+
 
 .site-footer {
     padding: 66px var(--space-page) 20px;
@@ -180,7 +177,6 @@ body {
 }
 
 
-/* Responsive */
 
 @media (max-width: 520px) {
 
