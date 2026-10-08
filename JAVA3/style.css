@@ -1,1 +1,232 @@
+:root {
+    --color-bg: #f4f7fb;
+    --color-text: #102d52;
+    --color-accent: #11766f;
+    --color-border: #cbd6e4;
+    --color-card: #ffffff;
 
+    --space-page: 22px;
+    --space-card: 32px;
+
+    --radius-card: 9px;
+}
+
+
+/* Box model */
+
+* {
+    box-sizing: border-box;
+}
+
+
+html {
+    font-size: 16px;
+}
+
+
+body {
+    margin: 0;
+    min-width: 0;
+
+    background: var(--color-bg);
+    color: var(--color-text);
+
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.5;
+}
+
+
+/* Header */
+
+.site-header {
+    padding: 8px var(--space-page) 26px;
+
+    border-bottom: 3px solid var(--color-accent);
+}
+
+
+.reference {
+    margin: 0 0 22px;
+    font-size: 16px;
+}
+
+
+.site-header h1 {
+    margin: 0;
+
+    font-size: 32px;
+    line-height: 1.2;
+}
+
+
+/* Main */
+
+.main-content {
+    width: 100%;
+    padding: 40px 16px 0;
+}
+
+
+.debate-card {
+    width: 100%;
+    max-width: 672px;
+
+    margin: 0 auto;
+    padding: var(--space-card);
+
+    background: var(--color-card);
+
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-card);
+}
+
+
+/* Etiketat */
+
+.tags {
+    display: flex;
+    flex-wrap: wrap;
+
+    gap: 6px;
+
+    margin-bottom: 34px;
+}
+
+
+.tag {
+    display: inline-block;
+
+    padding: 7px 12px;
+
+    border: 2px solid var(--color-accent);
+    border-radius: 999px;
+
+    background: white;
+    color: var(--color-text);
+
+    font-size: 14px;
+}
+
+
+.tag-limited {
+    border-style: dashed;
+}
+
+
+/* Titulli */
+
+.debate-card h2 {
+    margin: 0 0 20px;
+
+    font-size: 24px;
+    line-height: 1.3;
+}
+
+
+/* Detajet */
+
+.event-details {
+    margin: 0 0 18px;
+    font-size: 15px;
+}
+
+
+.description {
+    margin: 0 0 10px;
+    font-size: 15px;
+}
+
+
+/* Butoni / lidhja */
+
+.register-link {
+    display: inline-block;
+
+    margin-top: 0;
+    padding: 10px 16px;
+
+    border: 2px solid var(--color-accent);
+    border-radius: 6px;
+
+    background: var(--color-accent);
+    color: white;
+
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+
+/* Hover */
+
+.register-link:hover {
+    background: #0d625d;
+}
+
+
+/* Focus */
+
+.register-link:focus-visible {
+    outline: 3px solid #102d52;
+    outline-offset: 4px;
+}
+
+
+/* Footer */
+
+.site-footer {
+    padding: 66px var(--space-page) 20px;
+
+    font-size: 14px;
+}
+
+
+/* Responsive */
+
+@media (max-width: 520px) {
+
+    :root {
+        --space-page: 16px;
+        --space-card: 20px;
+    }
+
+
+    .site-header {
+        padding-bottom: 22px;
+    }
+
+
+    .site-header h1 {
+        font-size: 27px;
+    }
+
+
+    .main-content {
+        padding-top: 24px;
+    }
+
+
+    .debate-card {
+        max-width: none;
+    }
+
+
+    .tags {
+        margin-bottom: 26px;
+    }
+
+
+    .tag {
+        font-size: 13px;
+        padding: 6px 10px;
+    }
+
+
+    .debate-card h2 {
+        font-size: 21px;
+    }
+
+
+    .site-footer {
+        padding-top: 40px;
+    }
+}
