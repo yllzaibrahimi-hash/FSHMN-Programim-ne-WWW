@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="sq">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Kalkulator i thjeshtë për planifikimin e një pasditeje me buxhet të kufizuar.">
+  <title>Planifiko një pasdite me 20 euro</title>
+  <link rel="stylesheet" href="style.css">
+  <script type="module" src="app.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Kalo te përmbajtja</a>
+
+  <header class="site-header">
+    <div class="container">
+      <p class="eyebrow">Programimi në WWW · Java VI</p>
+      <h1>Planifiko një pasdite me 20 euro</h1>
+      <p class="intro">Llogarit koston për grupin dhe kontrollo nëse aktiviteti përshtatet me buxhetin.</p>
+    </div>
+  </header>
+
+  <main id="main" class="container">
+    <section class="calculator" aria-labelledby="form-title">
+      <h2 id="form-title">Kalkulatori i buxhetit</h2>
+      <form id="budget-form">
+        <div class="field">
+          <label for="price">Çmimi për person (€)</label>
+          <input id="price" name="price" type="number" min="0" step="0.01" value="4" required>
+        </div>
+        <div class="field">
+          <label for="people">Numri i personave (1–5)</label>
+          <input id="people" name="people" type="number" min="1" max="5" step="1" value="5" required>
+        </div>
+        <div class="field">
+          <label for="budget">Buxheti (€)</label>
+          <input id="budget" name="budget" type="number" min="0" step="0.01" value="20" required>
+        </div>
+        <button type="submit">Llogarit</button>
+      </form>
+
+      <p id="message" class="message" role="status" aria-live="polite">Plotëso fushat dhe shtyp “Llogarit”.</p>
+      <dl id="results" class="results" aria-label="Rezultatet e llogaritjes" hidden>
+        <div><dt>Kostoja totale</dt><dd id="total">—</dd></div>
+        <div><dt>Buxheti i mbetur</dt><dd id="remaining">—</dd></div>
+        <div><dt>Statusi</dt><dd id="status">—</dd></div>
+      </dl>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">Shembull mësimor · Të dhëna të sajuara · Vetëm front end</div>
+  </footer>
+</body>
+</html>
